@@ -1,5 +1,7 @@
 var express = require('express');
 
+var lib = require('./lib');
+
 var server = express.createServer();
 
 app.get('/', function(q, s) {
@@ -7,3 +9,4 @@ app.get('/', function(q, s) {
 });
 
 app.listen(12976);
+lib('hello', 'world');
